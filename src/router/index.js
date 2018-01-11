@@ -7,6 +7,9 @@ import Nav from '@/components/nav'
 import SideNav from '@/components/sideNav'
 import Lunbo from '@/components/lunbo'
 
+
+import photo from '@/components/user-info/photo'
+
 Vue.use(Router)
 
 export default new Router({
@@ -25,6 +28,13 @@ export default new Router({
       components: {
         a: SideNav,
         b: Lunbo,
+        c: Nav
+      }
+    },{
+      path: 'user-photo',
+      components: {
+        a: SideNav,
+        b: photo,
         c: Nav
       }
     }]
